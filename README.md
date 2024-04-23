@@ -37,15 +37,15 @@ Note : Perform these steps only after installing KVM in your system otherwise "H
 
 <h5>Public Network</h5>
 
--> Gateway : Write your systems gateway (for Linux cmd is - ip r)
+-> Gateway : 192.168.79.2 (for Linux cmd is - ip r)
 
 -> Netmask : 255.255.255.0
 
 -> VLAN/VNI : Keep it default
 
--> Start IP : 192.168.45.20 (If your IP Address is 192.168.45.131 then replace 20 with 131, you can make it as much as you can ) 
+-> Start IP : 192.168.79.20 (If your IP Address is 192.168.45.131 then replace 20 with 131, you can make it as much as you can ) 
 
--> End IP : 192.168.45.50 (Same as Start IP)
+-> End IP : 192.168.79.50 (Same as Start IP)
 
 <h5>Pod</h5>
 
@@ -55,9 +55,9 @@ Note : Perform these steps only after installing KVM in your system otherwise "H
 
 -> Reserved System Netmask : 255.255.255.0
 
--> Start Reserved System IP : 192.168.45.51 (Initially End IP was 192.168.45.50, Now start with .51)
+-> Start Reserved System IP : 192.168.79.51 (Initially End IP was 192.168.45.50, Now start with .51)
 
--> End Reserved System IP : 192.168.45.80 (Take as many you need)
+-> End Reserved System IP : 192.168.79.80 (Take as many you need)
 
 <h5>Guest Traffic</h5>
 
@@ -70,7 +70,7 @@ Note : Perform these steps only after installing KVM in your system otherwise "H
 
 <h5>IP Address</h5>
 
--> Host Name : 192.168.45.131 (Your systems IP Address)
+-> Host Name : 192.168.79.131 (Your systems IP Address)
 
 -> Username : anish (Your systems username)
 
@@ -84,7 +84,7 @@ Note : Perform these steps only after installing KVM in your system otherwise "H
 
 -> Protocal : nfs
 
--> Server : 192.168.45.131 (Your systems IP Address)
+-> Server : 192.168.79.131 (Your systems IP Address)
 
 -> Path : /export/primary
 
@@ -96,7 +96,7 @@ Note : Perform these steps only after installing KVM in your system otherwise "H
 
 -> Name : Secondary-1
 
--> Server : 192.168.45.131 (Your systems IP Address)
+-> Server : 192.168.79.131 (Your systems IP Address)
 
 -> Path : /export/secondary
 
